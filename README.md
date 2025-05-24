@@ -10,7 +10,7 @@ weak-supervision-fraud-detection
 ├── data/                   # Raw and processed datasets
 │   └── Commerce_Transaction_Data_2.csv
 │
-├── notebooks/              # Jupyter notebooks for EDA, cleaning, modeling
+├── notebooks/              # Jupyter notebooks for EDA, cleaning, feature engineering
 |   ├──  analysis_univatiate_1.ipynb
 |   ├──  analysis_bivariate_2.ipynb
 |   ├──  data_preprocessing_3.ipynb
@@ -21,7 +21,7 @@ weak-supervision-fraud-detection
 └── main.py                 # Entry point script
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -43,36 +43,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Run the project
-
-You can run the full pipeline with:
-
-```bash
-python main.py
-```
-
-Or explore the notebook for step-by-step analysis:
-
-```bash
-jupyter notebook notebooks/analysis_cleanlab.ipynb
-```
-
-## 📊 Features
+## Features
 
 - Clean noisy labels using `Cleanlab`
 - Identify near-duplicates and outliers
 - Visualize label quality and dataset issues
-- Train robust fraud detection models
 
-## 🧪 Dependencies (see `requirements.txt`)
-
-- pandas
-- scikit-learn
-- cleanlab
-- numpy
-- jupyter
-
-## 📌 Next Steps
+## Next Steps
 
 - Integrate anomaly detection models
 
